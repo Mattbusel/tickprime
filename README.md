@@ -18,7 +18,7 @@ Staged cacheline pre-warming on the consumer side and cooperative line demotion 
 With the headers from fin-prewarm on the include path:
 
 ```sh
-g++ -std=c++20 -O3 -march=native -pthread -I<fin-prewarm>/include/fin_prewarm main.cpp -o tickprime
+g++ -std=c++20 -O3 -march=native -pthread -I<fin-prewarm>/include -I<fin-prewarm>/include/fin_prewarm main.cpp -o tickprime
 ./tickprime
 ```
 
